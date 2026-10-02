@@ -1,0 +1,145 @@
+/* Scoped Login.css for Login Page */
+
+/* General body styling for login page */
+.login-page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1d1b1b, #50234a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Login container styling */
+.login-page .login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading styling */
+.login-page h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Input fields styling */
+.login-page input[type="email"],
+.login-page input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Ensures padding/border are included in width */
+}
+
+/* Focus state for inputs */
+.login-page input[type="email"]:focus,
+.login-page input[type="password"]:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+  outline: none;
+}
+
+/* Password toggle button styling */
+.login-page .toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6a11cb;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0;
+  z-index: 1;
+}
+
+/* Wrapper for password input and toggle */
+.login-page .input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center; /* Align the input and button vertically */
+  width: 100%;
+}
+
+/* Ensure the password field doesn't shrink when the toggle is placed */
+.login-page .input-wrapper input[type="password"] {
+  /* Add padding for space for the toggle button */
+  width: 100%; /* Ensures the width is the same as the email input field */
+}
+
+/* Submit button styling */
+.login-page button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-page button[type="submit"]:hover {
+  background: linear-gradient(135deg, #d1df18, #20dd08);
+}
+
+/* Success and error messages */
+.login-page p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.login-page p[style*="color: green"] {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.login-page p[style*="color: red"] {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Register link styling */
+.login-page span {
+  color: #6a11cb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-page span:hover {
+  color: #2575fc;
+}
+
+/* Adjust for better spacing */
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-page .login-container {
+    padding: 20px;
+  }
+
+  .login-page h2 {
+    font-size: 1.5rem;
+  }
+}

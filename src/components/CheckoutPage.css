@@ -1,0 +1,263 @@
+.checkout-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-button {
+  background: #444;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+  color: #222;
+}
+
+.order-summary, .payment-options {
+  margin-top: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+  color: #333;
+}
+
+.payment-option {
+  margin: 10px 0;
+}
+
+.payment-option input {
+  margin-right: 10px;
+}
+
+.checkout-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-actions button {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-actions button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.checkout-actions button:hover:enabled {
+  background-color: #0058c7;
+}
+
+.payment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.payment-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  animation: slideUp 0.3s ease-out;
+}
+
+.payment-modal-content input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.payment-modal-content input:focus {
+  border-color: #00baf2;
+}
+
+.payment-modal-content .pay-btn,
+.payment-modal-content .cancel-btn {
+  width: 90%;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pay-btn {
+  background-color: #00baf2;
+  color: #fff;
+}
+
+.pay-btn:hover {
+  background-color: #0090c7;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #000;
+}
+
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+
+.paytm-loader {
+  border: 4px solid #eee;
+  border-top: 4px solid #00baf2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+select {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  width: 100%;
+}
+/* OTP Modal */
+.otp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.otp-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  animation: slideUp 0.3s ease-out;
+}
+
+.otp-modal-content input {
+  width: 40px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s;
+}
+
+.otp-modal-content input:focus {
+  border-color: #00baf2;
+  outline: none;
+}
+
+.otp-modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00baf2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.otp-modal-content button:hover {
+  background-color: #0090c7;
+}
+
+/* Payment Success */
+.success-screen {
+  text-align: center;
+  padding: 30px;
+  background-color: #e0fdf7;
+  border-radius: 16px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: #00bfa5;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  font-size: 20px;
+  color: #333;
+}

@@ -1,0 +1,167 @@
+/* ThankYouPage.css */
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  background: linear-gradient(145deg, #f1f2f6, #d5d9e2); /* Elegant gradient background */
+  height: 100vh;
+  font-family: 'Lora', serif; /* Serif font for a luxurious feel */
+  color: #333;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft text shadow for depth */
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+button {
+  background-color: #f39c12; /* Luxurious golden color */
+  color: #fff;
+  font-size: 18px;
+  padding: 18px 40px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(243, 156, 18, 0.2); /* Soft shadow */
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #e67e22;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(243, 156, 18, 0.4); /* Deepened hover effect */
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.qr-code-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.qr-code-container p {
+  font-size: 16px;
+  color: #34495e;
+  margin-top: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.invoice-details {
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #f39c12; /* Golden border */
+}
+
+.invoice-details h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 10px;
+}
+
+.invoice-details p {
+  font-size: 16px;
+  color: #555;
+  margin: 12px 0;
+}
+
+.invoice-details .order-info {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.invoice-details .order-info p {
+  margin: 12px 0;
+}
+
+.invoice-details .order-info p span {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.invoice-details .total-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f39c12; /* Golden price for a luxurious touch */
+  margin-top: 25px;
+  text-align: right;
+}
+
+.separator-line {
+  width: 100%;
+  height: 2px;
+  background-color: #f1f1f1;
+  margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+  .thank-you-container {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 14px 30px;
+  }
+
+  .invoice-details {
+    padding: 25px;
+  }
+
+  .invoice-details p {
+    font-size: 14px;
+  }
+
+  .invoice-details .total-price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}

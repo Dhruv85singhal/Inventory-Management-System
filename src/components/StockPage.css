@@ -1,0 +1,134 @@
+/* Stock Page General Layout */
+.stock-container {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font for general text */
+    background-color: #2678ca;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #204550;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    
+  }
+  
+  h2:hover {
+    color: #2980b9; /* Hover effect for title */
+    transform: scale(1.05);
+  }
+  
+  /* Form Layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Table for Product List */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  table td {
+    background-color: #fff;
+    font-size: 1rem;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Styling for Delete Button */
+  button.delete-button {
+    padding: 5px 10px;
+    background-color: #e74c3c;  /* Red color */
+    font-size: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Update Quantity Form */
+  .update-quantity-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .update-quantity-form select,
+  .update-quantity-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .update-quantity-form button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-quantity-form button:hover {
+    background-color: #2ecc71;
+  }
+  
